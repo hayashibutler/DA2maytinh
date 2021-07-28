@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>DN2 maytinh</title>
+	<script type="text/javascript" src="function.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="container">
+	<h1>tinh tien tip</h1>
+	  <form>
+		<p>How much was your bill?</p>
+		<p>$ <input id="bill" type="text" pattern="[0-9]" required="" placeholder="Nhap so tien"></p>
+
+		<p>How was your service?</p>
+		<p>
+			<select id="idchoose">
+				<option disable value="0" selected>vui long chon</option>
+				<option value="0.3">30% - &#10084&#10084&#10084&#10084&#10084</option>
+				<option value="0.2">20% - &#10084&#10084&#10084&#10084</option>
+				<option value="0.15">15% - &#10084&#10084&#10084</option>
+				<option value="0.1">10% - &#10084&#10084</option>
+				<option value="0.05">05% - &#10084</option>
+			</select>
+		</p>
+	  </form>
+		<p>How many people are sharing the bill?</p>
+		<p>
+			<input type="text" id="idpeople" pattern="[0-9].{1,}" name="people" placeholder="Nhap so nguoi">
+			<span> people</span><br><br>
+		</p>
+		<button onclick="funcsutl()">Ket qua</button>
+
+	<p id="totalTip">
+		<sup>$</sup><span id="idsutl"></span>
+	</p>
+</div>
+
+</body>
+</html>
